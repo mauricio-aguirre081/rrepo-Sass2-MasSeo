@@ -1,0 +1,97 @@
+/*****************************************HOME *****************************************/
+
+#main-home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    background: url("../img/side-view-female-tailor2.jpg");
+    /*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: auto;
+
+}
+
+
+/*      <a href='https://www.freepik.com/photos/seamstress'>Seamstress photo created by freepik - www.freepik.com</a>
+*/
+
+#main-carousel{
+    width: 400px;
+    height: fit-content;
+}
+
+.slideshow{
+    width: 350px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    left: 40px;
+    top: 10px;
+}
+
+.slideshow-item{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+
+    animation: cycleImages 31s infinite;
+}
+
+.slideshow-item:nth-child(1){
+    animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2){
+    animation-delay: 10s;
+}
+
+.slideshow-item:nth-child(3){
+    animation-delay: 20s;
+}
+
+.slideshow-item img{
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+}
+
+@keyframes cycleImages{
+    25%{
+        opacity: 1;
+    }
+
+    40%{
+        opacity: 0;
+    }
+}
+
+
+
+
+#main-parrafo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    height: auto;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+}
+
+
+.home_parrafo{
+    font-size: 25px;
+    line-height: 2;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(138, 138, 141);
+}
+
+

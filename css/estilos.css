@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lato:ital,wght@0,300;0,400;0,900;1,400;1,700&display=swap");
+/************colores ************/
+/*****************************************HEADER NAVBAR *************************************/
+.navbar {
+  background: #fcd5ce;
+  background: radial-gradient(circle, #fcd5ce 20%, #ffe5d9 50%, #fec5bb 100%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 100; }
+  .navbar .navbar-nav {
+    margin-right: 30px; }
+  .navbar .navbar-brand {
+    font-family: Alex Brush;
+    font-size: 35px;
+    margin-left: 30px; }
+  .navbar .nav-link {
+    font-family: Lato;
+    font-size: 25px; }
+
+/****************************************FOOTER **************************************/
+.footer__right {
+  text-align: end; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FEC89A;
+  font-family: Lato;
+  font-size: 30px;
+  padding-right: 20px;
+  padding-left: 20px; }
+
+/*****************************************HOME *****************************************/
+#main-home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  background: url("../img/side-view-female-tailor2.jpg");
+  /*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto; }
+
+/*      <a href='https://www.freepik.com/photos/seamstress'>Seamstress photo created by freepik - www.freepik.com</a>
+*/
+#main-carousel {
+  width: 400px;
+  height: fit-content; }
+
+.slideshow {
+  width: 350px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  left: 40px;
+  top: 10px; }
+
+.slideshow-item {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycleImages 31s infinite; }
+
+.slideshow-item:nth-child(1) {
+  animation-delay: 0s; }
+
+.slideshow-item:nth-child(2) {
+  animation-delay: 10s; }
+
+.slideshow-item:nth-child(3) {
+  animation-delay: 20s; }
+
+.slideshow-item img {
+  width: fit-content;
+  height: fit-content;
+  object-fit: cover; }
+
+@keyframes cycleImages {
+  25% {
+    opacity: 1; }
+  40% {
+    opacity: 0; } }
+
+#main-parrafo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px); }
+
+.home_parrafo {
+  font-size: 25px;
+  line-height: 2;
+  text-align: center;
+  text-shadow: 2px 2px 2px #8a8a8d; }
+
+/************************************* SERVICIOS ***********************************/
+.section__main__servicios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #E8E8E4;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: fit-content; }
+
+.card-title {
+  text-align: center; }
+
+.card-body iframe:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease; }
+
+.descripciones {
+  margin-top: 20px;
+  margin-bottom: 20PX; }
+
+.card-descripciones {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.card-descripciones p {
+  font-family: Lato;
+  font-size: 20px; }
+
+.div__descripciones__fotos img:hover {
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
+  transition: 1s ease; }
+
+/**************************************** TESTIMONIOS ******************************************/
+#main-testimonios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #E8E8E4; }
+
+.flex-item {
+  width: 400px;
+  height: 550px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px); }
+
+.flex-item:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.card-imagen {
+  width: 250px; }
+
+.centrar-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px; }
+
+.modal-header img {
+  padding-left: 140px; }
+
+.boton {
+  align-self: center; }
+
+/***************************************** SOBRE MI ********************************************/
+#main-sobremi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #E8E8E4; }
+
+#div__sobremi__fotos {
+  width: 400px; }
+
+#div__sobremi__parrafo {
+  width: 60%; }
+
+#div__sobremi__parrafo p {
+  font-family: Lato;
+  font-size: 25px; }
+
+/***********************************  CONTACTO *********************************************************/
+#main-contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #E8E8E4; }
+
+#div__contacto__svg {
+  width: 500px; }
+
+#div__contacto__formulario {
+  width: 500px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px; }
+
+.contenedor__inputs {
+  padding-top: 5px;
+  margin-top: 20px;
+  background-color: #ECE4DB;
+  height: 40px;
+  weight: 50px; }
+
+.contenedor__motivo {
+  padding-top: 5px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #ECE4DB;
+  height: 70px;
+  weight: 50px; }
+
+.contenedor__consulta {
+  padding-top: 5px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #ECE4DB;
+  height: 300px;
+  weight: 50px; }
+
+#boton-formulario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #ECE4DB;
+  height: 40px;
+  weight: 50px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f8edeb; }
+
+/*********************************************TITULO H3 **************************************************/
+.div__h2__titulos, .h2__titulos {
+  background-color: #F8EDEB; }
+
+.h2__titulos {
+  font-family: Lato;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #afacac; }
+
+.h2__titulos:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease; }
+
+/****************************************media queries **************************************/
+@media only screen and (max-width: 320px) {
+  .footer__right {
+    text-align: start; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: Lato;
+    font-size: 20px;
+    padding-right: 5px;
+    padding-left: 5px; }
+  .navbar-brand {
+    padding-left: px;
+    font-family: Alex Brush;
+    font-size: 2em; }
+  .slideshow {
+    width: 350px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    left: 5px;
+    top: 10px; }
+  #div__sobremi__parrafo {
+    width: 75%; }
+  #div__contacto__formulario {
+    width: 500px;
+    padding-left: 5px;
+    padding-top: 30px;
+    padding-bottom: 10px; }
+  #div__contacto__svg {
+    width: 300px; } }

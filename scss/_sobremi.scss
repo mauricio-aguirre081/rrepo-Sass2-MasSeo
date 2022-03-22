@@ -1,0 +1,22 @@
+/***************************************** SOBRE MI ********************************************/
+
+#main-sobremi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $main-color;
+}
+
+#div__sobremi__fotos{
+    width: 400px;
+}
+
+#div__sobremi__parrafo{
+    width: 60%;
+}
+
+#div__sobremi__parrafo p{
+    font-family: Lato;
+    font-size: 25px;
+}

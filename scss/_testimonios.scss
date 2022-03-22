@@ -1,0 +1,50 @@
+/**************************************** TESTIMONIOS ******************************************/
+
+#main-testimonios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $main-color;
+
+}
+
+.flex-item{
+    width: 400px;
+    height: 550px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+
+
+}
+
+.flex-item:hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.card-imagen{
+    width: 250px;
+}
+
+.centrar-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+
+}
+
+.modal-header img{
+    padding-left: 140px;
+    
+    
+}
+
+.boton{
+    align-self: center;
+}

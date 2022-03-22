@@ -1,0 +1,64 @@
+/***********************************  CONTACTO *********************************************************/
+#main-contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $main-color;
+}
+
+#div__contacto__svg{
+    width: 500px;
+}
+
+
+#div__contacto__formulario{
+    width: 500px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+@mixin contenedores-formulario($color, $alto, $ancho) {
+    background-color: $color;
+    height: $alto;
+    weight: $ancho;
+    
+}
+
+.contenedor__inputs{
+    padding-top: 5px;
+    margin-top: 20px;
+
+    @include contenedores-formulario(#ECE4DB, 40px, 50px)
+}
+
+.contenedor__motivo{
+    padding-top: 5px;
+    margin-top: 20px;
+    text-align: center;
+
+    @include contenedores-formulario(#ECE4DB, 70px, 50px)
+}
+
+.contenedor__consulta{
+
+    padding-top: 5px;
+    margin-top: 20px;
+    text-align: center;
+
+    @include contenedores-formulario(#ECE4DB, 300px, 50px)
+}
+
+#boton-formulario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5px;
+    margin-top: 20px;
+    text-align: center;
+
+    @include contenedores-formulario(#ECE4DB, 40px, 50px)
+}
+

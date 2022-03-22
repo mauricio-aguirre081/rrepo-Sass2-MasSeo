@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lato:ital,wght@0,300;0,400;0,900;1,400;1,700&display=swap');
+
+
+@import './variables';
+@import './header';
+@import './footer';
+@import './home';
+@import './servicios';
+@import './testimonios';
+@import './sobremi';
+@import './contacto';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $background-color;
+}
+
+
+
+
+/*********************************************TITULO H3 **************************************************/
+
+
+.div__h2__titulos{
+    background-color: $h2-color;
+}
+
+.h2__titulos{
+    @extend .div__h2__titulos;
+    font-family: Lato;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow:  1px 1px 1px rgb(175, 172, 172);
+}
+
+
+.h2__titulos:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+}
+
+
+/****************************************media queries **************************************/
+@media only screen and (max-width: 320px){
+
+    
+    .footer__right{
+        text-align: start;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-family: Lato;
+        font-size: 20px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .navbar-brand{
+        padding-left: px;
+        font-family: Alex Brush;
+        font-size: 2em;
+
+    }
+
+    .slideshow{
+        width: 350px;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+        left: 5px;
+        top: 10px;
+    }
+
+    #div__sobremi__parrafo{
+        width: 75%;
+    }
+
+    #div__contacto__formulario{
+        width: 500px;
+        padding-left: 5px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    #div__contacto__svg{
+        width: 300px;
+    }
+
+}
+
+
+
+
+
+
+

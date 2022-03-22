@@ -1,0 +1,45 @@
+/************************************* SERVICIOS ***********************************/
+
+.section__main__servicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $main-color;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-body iframe:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+}
+
+.descripciones{
+    margin-top: 20px;
+    margin-bottom: 20PX;
+}
+
+.card-descripciones{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-descripciones p{
+    font-family: Lato;
+    font-size: 20px;
+}
+
+.div__descripciones__fotos img:hover{
+        -webkit-transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
+        transition: 1s ease;
+}
